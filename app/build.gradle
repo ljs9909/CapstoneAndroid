@@ -38,8 +38,10 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
+
     implementation 'com.github.bumptech.glide:glide:4.10.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 
+    // 툴팁(도움말) 구현 모듈
     implementation "com.github.skydoves:balloon:1.1.0"
 }

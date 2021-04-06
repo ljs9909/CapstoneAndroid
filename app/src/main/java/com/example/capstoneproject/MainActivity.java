@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 로딩 페이지 추가 코드(삭제할 수도 있는 코드)
+        // 로딩 페이지 코드
         Intent intent = new Intent(getApplicationContext(), LoadingActivity.class);
         startActivity(intent);
 

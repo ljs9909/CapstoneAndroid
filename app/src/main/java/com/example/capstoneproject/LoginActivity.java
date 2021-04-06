@@ -50,12 +50,12 @@ public class LoginActivity extends AppCompatActivity {
         btnStart = findViewById(R.id.btnStart);
         btnStop = findViewById(R.id.btnStop);
 
-        // 실행 버튼
+        // 실행 버튼 누르기
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                // 애니메이션 적용
+                // 애니메이션 적용 (움짤 재생)
                 ImageView backgroundImageView = findViewById(R.id.imageView);
                 Glide.with(getApplicationContext()).load(R.raw.loading).into(backgroundImageView);
 
@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // 종료 버튼
+        // 종료 버튼 누르기
         btnStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                                 btnStart.setEnabled(true);
                                 btnStart.setBackgroundResource(R.drawable.background_rounding);
 
-                                // 애니메이션 종료
+                                // 애니메이션 종료 (움짤 멈춤)
                                 ImageView backgroundImageView = findViewById(R.id.imageView);
                                 Glide.with(getApplicationContext()).load(R.drawable.loadingstop).into(backgroundImageView);
 
@@ -114,7 +114,7 @@ public class LoginActivity extends AppCompatActivity {
 
         img_up = findViewById(R.id.img_up);
 
-        // 이미지 업로드 하러가기
+        // 이미지 업로드 하러가기 (image_upload 액티비티로 전환)
         img_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
